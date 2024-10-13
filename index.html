@@ -8,6 +8,7 @@
         body {
             font-family: Arial, sans-serif;
             background-color: #f0f0f0; /* Light background */
+            background-image: url('https://www.transparenttextures.com/patterns/asfalt-light.png'); /* Subtle texture */
             color: #000000; /* Text color */
             text-align: center;
             padding: 50px;
@@ -45,6 +46,7 @@
             border-radius: 5px;
             text-decoration: none;
             transition: background-color 0.3s; /* Smooth transition */
+            margin-top: 20px;
         }
 
         .button:hover {
@@ -80,7 +82,23 @@
             from { opacity: 0; }
             to { opacity: 1; }
         }
+
+        /* Contact section */
+        #contact {
+            display: none; /* Hidden by default */
+            background-color: #0073e6;
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
     </style>
+    <script>
+        function toggleContact() {
+            const contactSection = document.getElementById("contact");
+            contactSection.style.display = contactSection.style.display === "none" ? "block" : "none";
+        }
+    </script>
 </head>
 <body>
     <header>
@@ -95,6 +113,20 @@
         <div class="social-icons">
             <a href="https://www.linkedin.com/in/mufaddalkhamusi">LinkedIn</a>
             <a href="https://github.com/mufaddalkhamusi">GitHub</a>
+            <a href="https://twitter.com/mufaddalkhamusi">Twitter</a>
+        </div>
+        
+        <h2 id="about">About Me</h2>
+        <p>
+            Hello! My name is Mufaddal Khamusi, and I'm a passionate cybersecurity student currently studying at Middlesex University. With a keen interest in technology and its potential to shape our future, I am dedicated to learning and mastering the skills necessary to protect digital information and ensure online safety. My journey into the world of cybersecurity began with a fascination for how systems work and the challenges they face in today's interconnected landscape. I enjoy tackling complex problems and constantly seek opportunities to enhance my knowledge through projects, workshops, and collaboration with like-minded individuals. I believe that staying curious and adaptable is crucial in this ever-evolving field. When I’m not studying, you can find me exploring the latest trends in tech or enjoying a good football match. I look forward to connecting with others who share my passion!
+        </p>
+
+        <button class="button" onclick="toggleContact()">Contact Me</button>
+
+        <div id="contact">
+            <h3>Contact Details</h3>
+            <p>Email: <a href="mailto:your-email@example.com" style="color: white;">your-email@example.com</a></p>
+            <p>Phone: +1234567890</p>
         </div>
     </div>
 </body>
