@@ -1,31 +1,52 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Welcome to Mufaddal's GitHub Page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Mufaddal's Portfolio</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
+            background: linear-gradient(135deg, #00b4db, #0083b0); /* Gradient background */
             color: #333;
             text-align: center;
             padding: 50px;
+            animation: fadeIn 1s ease; /* Fade-in effect for the whole page */
         }
+
         h1, h2 {
-            color: #0073e6;
+            color: #ffffff;
+            opacity: 0; /* Start invisible for animation */
+            animation: slideIn 0.8s forwards; /* Slide-in effect */
         }
+
+        h1 {
+            animation-delay: 0.2s; /* Delay for the main title */
+        }
+
+        h2 {
+            animation-delay: 0.4s; /* Delay for subsections */
+        }
+
         a {
             text-decoration: none;
-            color: #0073e6;
+            color: #ffffff;
         }
+
         .container {
-            background: #fff;
+            background: rgba(255, 255, 255, 0.9); /* Slightly transparent white */
             padding: 20px;
             border-radius: 8px;
             box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
             display: inline-block;
             width: 80%;
             max-width: 800px;
+            transform: translateY(20px); /* Start lower for animation */
+            opacity: 0; /* Start invisible for animation */
+            animation: fadeInUp 0.8s forwards; /* Slide-up effect */
+            animation-delay: 0.6s; /* Delay for the container */
         }
+
         .button {
             background-color: #0073e6;
             color: white;
@@ -34,24 +55,77 @@
             text-decoration: none;
             display: inline-block;
             margin-top: 20px;
+            transition: background-color 0.3s; /* Smooth color transition */
         }
+
+        .button:hover {
+            background-color: #005bb5; /* Darker shade on hover */
+        }
+
         .section {
             margin: 40px 0;
         }
+
+        .project {
+            background: #f9f9f9;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 10px 0;
+            text-align: left;
+            opacity: 0; /* Start invisible for animation */
+            transform: translateY(10px); /* Start lower for animation */
+            animation: fadeInUp 0.8s forwards; /* Slide-up effect */
+        }
+
+        .project h3 {
+            margin-top: 0;
+        }
+
         .contact-info {
             margin-top: 10px;
             font-size: 14px;
+        }
+
+        /* Keyframes for animations */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes slideIn {
+            from { transform: translateY(-20px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
         }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>Hello, I'm Mufaddal!</h1>
-        <p>Welcome to my GitHub Page.</p>
+        <p>Welcome to my Portfolio.</p>
         
         <div class="section">
             <h2>About Me</h2>
             <p>I'm a Cybersecurity student currently pursuing my degree at Middlesex University Dubai. I have a keen interest in network security, cryptography, and digital forensics. I'm always looking for new challenges and opportunities to expand my skills.</p>
+        </div>
+
+        <div class="section">
+            <h2>Portfolio</h2>
+            <div class="project">
+                <h3>Project 1: Network Security Analyzer</h3>
+                <p>Description: A tool to scan networks for vulnerabilities and security risks.</p>
+                <a href="#" class="button" target="_blank">View Project</a>
+            </div>
+            <div class="project">
+                <h3>Project 2: Digital Forensics Dashboard</h3>
+                <p>Description: A dashboard to analyze digital evidence and generate reports.</p>
+                <a href="#" class="button" target="_blank">View Project</a>
+            </div>
+            <!-- Add more projects as needed -->
         </div>
 
         <div class="section">
@@ -64,10 +138,6 @@
         </div>
 
         <a href="CV%20-%20Mufaddal%20Khamusi.pdf" class="button" target="_blank">Download My CV</a>
-        
-        <div class="section">
-            <p>Check out my projects on <a href="https://github.com/mufaddalkhamusi" target="_blank">GitHub</a>.</p>
-        </div>
     </div>
 </body>
 </html>
