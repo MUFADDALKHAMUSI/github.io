@@ -10,7 +10,7 @@
             text-align: center;
             padding: 50px;
         }
-        h1 {
+        h1, h2 {
             color: #0073e6;
         }
         a {
@@ -23,6 +23,8 @@
             border-radius: 8px;
             box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
             display: inline-block;
+            width: 80%;
+            max-width: 800px;
         }
         .button {
             background-color: #0073e6;
@@ -33,14 +35,39 @@
             display: inline-block;
             margin-top: 20px;
         }
+        .section {
+            margin: 40px 0;
+        }
+        .contact-info {
+            margin-top: 10px;
+            font-size: 14px;
+        }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>Hello, I'm Mufaddal!</h1>
         <p>Welcome to my GitHub Page.</p>
-        <p>Check out my projects on <a href="https://github.com/mufaddalkhamusi" target="_blank">GitHub</a>.</p>
+        
+        <div class="section">
+            <h2>About Me</h2>
+            <p>I'm a Cybersecurity student currently pursuing my degree at Middlesex University Dubai. I have a keen interest in network security, cryptography, and digital forensics. I'm always looking for new challenges and opportunities to expand my skills.</p>
+        </div>
+
+        <div class="section">
+            <h2>Contact Me</h2>
+            <p>If you'd like to get in touch, feel free to reach out via email or phone.</p>
+            <div class="contact-info">
+                <p>Email: <a href="mailto:mufaddalk12@gmail.com">mufaddalk12@gmail.com</a></p>
+                <p>Phone: +971 52 507 8572</p>
+            </div>
+        </div>
+
         <a href="CV%20-%20Mufaddal%20Khamusi.pdf" class="button" target="_blank">Download My CV</a>
+        
+        <div class="section">
+            <p>Check out my projects on <a href="https://github.com/mufaddalkhamusi" target="_blank">GitHub</a>.</p>
+        </div>
     </div>
 </body>
 </html>
