@@ -3,48 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to Mufaddal's Portfolio</title>
+    <title>Mufaddal Khamusi's Portfolio</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background: linear-gradient(135deg, #00b4db, #0083b0); /* Gradient background */
-            color: #000000; /* Change font color to black */
+            background-color: #f0f0f0; /* Light background */
+            color: #000000; /* Text color */
             text-align: center;
             padding: 50px;
-            animation: fadeIn 1s ease; /* Fade-in effect for the whole page */
+            margin: 0; /* Remove default margin */
         }
 
-        h1 {
-            color: #0073e6; /* Heading color set to blue */
-            opacity: 0; /* Start invisible for animation */
-            animation: slideIn 0.8s forwards; /* Slide-in effect */
-            animation-delay: 0.2s; /* Delay for the main title */
-        }
-
-        h2 {
-            color: #0073e6; /* Heading color set to blue */
-            opacity: 0; /* Start invisible for animation */
-            animation: slideIn 0.8s forwards; /* Slide-in effect */
-            animation-delay: 0.4s; /* Delay for subsections */
-        }
-
-        a {
-            text-decoration: none;
-            color: #ffffff;
-        }
-
-        .container {
-            background: rgba(255, 255, 255, 0.9); /* Slightly transparent white */
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
             padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-            display: inline-block;
-            width: 80%;
-            max-width: 800px;
-            transform: translateY(20px); /* Start lower for animation */
-            opacity: 0; /* Start invisible for animation */
-            animation: fadeInUp 0.8s forwards; /* Slide-up effect */
-            animation-delay: 0.6s; /* Delay for the container */
+        }
+
+        .name {
+            font-size: 2.5em;
+            font-weight: bold;
+            color: #0073e6; /* Blue color for the name */
+        }
+
+        .profile-img {
+            border-radius: 50%; /* Circular profile image */
+            width: 150px;
+            height: 150px;
+        }
+
+        .tagline {
+            font-size: 1.5em;
+            margin: 20px 0;
         }
 
         .button {
@@ -53,22 +44,35 @@
             padding: 10px 20px;
             border-radius: 5px;
             text-decoration: none;
-            display: inline-block;
-            margin-top: 20px;
-            transition: background-color 0.3s; /* Smooth color transition */
+            transition: background-color 0.3s; /* Smooth transition */
         }
 
         .button:hover {
             background-color: #005bb5; /* Darker shade on hover */
         }
 
-        .section {
-            margin: 40px 0;
+        .social-icons {
+            margin-top: 20px;
         }
 
-        .contact-info {
-            margin-top: 10px;
-            font-size: 14px;
+        .social-icons a {
+            margin: 0 10px;
+            color: #0073e6;
+            text-decoration: none;
+        }
+
+        .social-icons a:hover {
+            color: #005bb5; /* Darker shade on hover */
+        }
+
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+            margin: auto;
+            width: 80%;
+            max-width: 800px;
         }
 
         /* Keyframes for animations */
@@ -76,38 +80,22 @@
             from { opacity: 0; }
             to { opacity: 1; }
         }
-
-        @keyframes slideIn {
-            from { transform: translateY(-20px); opacity: 0; }
-            to { transform: translateY(0); opacity: 1; }
-        }
-
-        @keyframes fadeInUp {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
     </style>
 </head>
 <body>
+    <header>
+        <div class="name">Mufaddal Khamusi</div>
+        <img src="path/to/your/profile-image.jpg" alt="Profile Image" class="profile-img">
+    </header>
     <div class="container">
-        <h1>Hello, I'm Mufaddal!</h1>
-        <p>Welcome to my Portfolio.</p>
+        <h1 class="tagline">Hi There, I'm Mufaddal!</h1>
+        <p>Welcome to my Portfolio. I'm a Cybersecurity student.</p>
+        <a href="#about" class="button">About Me</a>
         
-        <div class="section">
-            <h2>About Me</h2>
-            <p>I'm a Cybersecurity student currently pursuing my degree at Middlesex University Dubai. I have a keen interest in network security, cryptography, and digital forensics. I'm always looking for new challenges and opportunities to expand my skills.</p>
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/in/mufaddalkhamusi">LinkedIn</a>
+            <a href="https://github.com/mufaddalkhamusi">GitHub</a>
         </div>
-
-        <div class="section">
-            <h2>Contact Me</h2>
-            <p>If you'd like to get in touch, feel free to reach out via email or phone.</p>
-            <div class="contact-info">
-                <p>Email: <a href="mailto:mufaddalk12@gmail.com">mufaddalk12@gmail.com</a></p>
-                <p>Phone: +971 52 507 8572</p>
-            </div>
-        </div>
-
-        <a href="CV%20-%20Mufaddal%20Khamusi.pdf" class="button" target="_blank">Download My CV</a>
     </div>
 </body>
 </html>
