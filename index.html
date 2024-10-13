@@ -77,6 +77,12 @@
             max-width: 800px;
         }
 
+        /* Keyframes for animations */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
         /* Contact section */
         #contact {
             display: none; /* Hidden by default */
@@ -88,7 +94,6 @@
         }
     </style>
     <script>
-        // Function to toggle the visibility of the contact section
         function toggleContact() {
             const contactSection = document.getElementById("contact");
             contactSection.style.display = contactSection.style.display === "none" ? "block" : "none";
@@ -98,8 +103,7 @@
 <body>
     <header>
         <div class="name">Mufaddal Khamusi</div>
-        <!-- Update the src below with the URL of your animated GIF -->
-        <img src="path/to/your/animated-profile-image.gif" alt="Profile Image" class="profile-img">
+        <img src="https://raw.githubusercontent.com/MUFADDALKHAMUSI/github.io/main/cv.jpeg" alt="Profile Image" class="profile-img"> <!-- Profile Image -->
     </header>
     <div class="container">
         <h1 class="tagline">Hi There, I'm Mufaddal!</h1>
