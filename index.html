@@ -39,7 +39,7 @@
             margin: 20px 0;
         }
 
-        .button {
+        .button, .download-button {
             background-color: #0073e6;
             color: white;
             padding: 10px 20px;
@@ -47,9 +47,10 @@
             text-decoration: none;
             transition: background-color 0.3s; /* Smooth transition */
             margin-top: 20px;
+            display: inline-block; /* Allow margins */
         }
 
-        .button:hover {
+        .button:hover, .download-button:hover {
             background-color: #005bb5; /* Darker shade on hover */
         }
 
@@ -126,6 +127,8 @@
             <p>Email: <a href="mailto:mufaddalk12@gmail.com" style="color: white;">mufaddalk12@gmail.com</a></p>
             <p>Phone: +971-525078572</p>
         </div>
+
+        <a href="path/to/your/CV.pdf" class="download-button" download>Download CV</a>
     </div>
 </body>
 </html>
