@@ -77,12 +77,6 @@
             max-width: 800px;
         }
 
-        /* Keyframes for animations */
-        @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
-        }
-
         /* Contact section */
         #contact {
             display: none; /* Hidden by default */
@@ -94,6 +88,7 @@
         }
     </style>
     <script>
+        // Function to toggle the visibility of the contact section
         function toggleContact() {
             const contactSection = document.getElementById("contact");
             contactSection.style.display = contactSection.style.display === "none" ? "block" : "none";
@@ -103,12 +98,12 @@
 <body>
     <header>
         <div class="name">Mufaddal Khamusi</div>
-        <img src="path/to/your/profile-image.jpg" alt="Profile Image" class="profile-img">
+        <!-- Update the src below with the URL of your animated GIF -->
+        <img src="path/to/your/animated-profile-image.gif" alt="Profile Image" class="profile-img">
     </header>
     <div class="container">
         <h1 class="tagline">Hi There, I'm Mufaddal!</h1>
         <p>Welcome to my Portfolio. I'm a Cybersecurity student.</p>
-        
         
         <div class="social-icons">
             <a href="https://www.linkedin.com/in/mufaddal-khamusi-201450266">LinkedIn</a>
